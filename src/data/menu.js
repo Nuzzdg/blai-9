@@ -196,8 +196,7 @@ export const menuItems = [
   },
   {
     name: 'Spicy potatoes B9', category: 'tapas', price: 5.9,
-    allergens: ['Egg', 'Dairy'], traces: [], image: '/images/patatas-bravas.jpg',
-    alt: 'Blai 9 spicy potatoes, the restaurant’s patatas bravas',
+    allergens: ['Egg', 'Dairy'], traces: [],
   },
   {
     name: 'Padrón peppers', category: 'tapas', price: 6.5,
@@ -206,7 +205,6 @@ export const menuItems = [
   {
     name: 'Fried squid strips', category: 'tapas', price: 8.5,
     allergens: ['Gluten', 'Egg'], traces: ['Dairy', 'Soy', 'Crustaceans', 'Fish', 'Sulphur Dioxide and Sulphites'],
-    image: '/images/calamari-blai-9.png', alt: 'Fried squid strips supplied by Blai 9',
   },
   {
     name: 'Kentucky style chicken', category: 'tapas', price: 10.8,
@@ -268,7 +266,7 @@ export const drinkCategories = [
     label: 'Sangrías',
     items: [
       { name: 'Sangría de cava', options: [['Glass 330ml', 5.5], ['Jar 1l', 19]] },
-      { name: 'Sangría de vino tinto', options: [['Glass 330ml', 4.5], ['Jar 1l', 16]], image: '/images/sangria-blai-9.png', alt: 'Blai 9 sangria supplied by the restaurant' },
+      { name: 'Sangría de vino tinto', options: [['Glass 330ml', 4.5], ['Jar 1l', 16]] },
       { name: 'Tinto de verano', options: [['Glass 330ml', 4.2], ['Jar 1l', 15]] },
     ],
   },
