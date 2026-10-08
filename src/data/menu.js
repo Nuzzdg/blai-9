@@ -44,7 +44,7 @@ export const menuItems = [
     category: 'pintxos',
     description: 'A classic seaside snack, right here on Carrer de Blai.',
     note: 'A CLASSIC',
-    image: '/images/calamares.jpg',
+    image: '/images/calamari-blai-9.png',
     alt: 'A plate of fried calamari rings with lemon',
   },
   {
@@ -60,7 +60,7 @@ export const menuItems = [
     category: 'drinks',
     description: 'Bright, easy-going and made for another round of plates.',
     note: 'FOR THE TABLE',
-    image: '/images/sangria.jpg',
+    image: '/images/sangria-blai-9.png',
     alt: 'A glass pitcher of sangria with citrus',
   },
   {
