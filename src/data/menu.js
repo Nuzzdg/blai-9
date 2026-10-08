@@ -12,15 +12,15 @@ export const menuItems = [
     category: 'pintxos',
     description: 'A colourful little line-up. Pick a few and pass them round.',
     note: 'BAR FAVOURITE',
-    image: 'photo-1547592180-85f173990554',
-    alt: 'A table of small plates and tapas ready to share',
+    image: '/images/pinchos-variados.jpg',
+    alt: 'Assorted Basque pintxos with olives and guindilla peppers on a platter',
   },
   {
     name: 'Patatas bravas',
     category: 'plates',
     description: 'Crispy, saucy, and always better in the middle of the table.',
     note: 'MADE FOR THE MIDDLE',
-    image: 'photo-1579751626657-72bc17010498',
+    image: '/images/patatas-bravas.jpg',
     alt: 'Golden crispy potatoes served on a plate',
   },
   {
@@ -44,8 +44,8 @@ export const menuItems = [
     category: 'pintxos',
     description: 'A classic seaside snack, right here on Carrer de Blai.',
     note: 'A CLASSIC',
-    image: 'photo-1599487488170-d11ec9c172f0',
-    alt: 'Golden calamari served on a small plate',
+    image: '/images/calamares.jpg',
+    alt: 'A plate of fried calamari rings with lemon',
   },
   {
     name: 'Vermut',
@@ -60,7 +60,7 @@ export const menuItems = [
     category: 'drinks',
     description: 'Bright, easy-going and made for another round of plates.',
     note: 'FOR THE TABLE',
-    image: 'photo-1551538827-9c037cb4f32a',
+    image: '/images/sangria.jpg',
     alt: 'A glass pitcher of sangria with citrus',
   },
   {
@@ -86,7 +86,7 @@ export const signatureDishes = [
     number: '01',
     name: 'Patatas bravas',
     line: 'Crispy potatoes. Bold bar energy.',
-    image: 'photo-1579751626657-72bc17010498',
+    image: '/images/patatas-bravas.jpg',
     alt: 'A plate of crisp golden patatas bravas',
     className: 'feature--bravas',
   },
@@ -94,8 +94,8 @@ export const signatureDishes = [
     number: '02',
     name: 'Pinchos variados',
     line: 'A few favourites, all in good company.',
-    image: 'photo-1547592180-85f173990554',
-    alt: 'Small tapas dishes spread across a table',
+    image: '/images/pinchos-variados.jpg',
+    alt: 'Assorted Basque pintxos with olives and guindilla peppers on a platter',
     className: 'feature--pinchos',
   },
   {
@@ -142,7 +142,9 @@ export const images = {
 };
 
 export const imageUrl = (id, width = 1200) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=82`;
+  id.startsWith('/')
+    ? `${import.meta.env.BASE_URL}${id.slice(1)}`
+    : `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=82`;
 
 export const restaurant = {
   name: 'Blai 9',
